@@ -1,0 +1,14 @@
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\bin\Debug\TrinityGameplay.exe.config
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\bin\Debug\TrinityGameplay.exe
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\bin\Debug\TrinityGameplay.pdb
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\obj\Debug\TrinityGameplay.exe
+C:\Users\User\source\repos\TrinityGameplay\TrinityGameplay\obj\Debug\TrinityGameplay.pdb
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\obj\Debug\TrinityGameplay.exe
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\obj\Debug\TrinityGameplay.pdb
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.exe.config
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.exe
+C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.pdb
