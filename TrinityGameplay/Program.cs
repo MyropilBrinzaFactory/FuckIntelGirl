@@ -9,8 +9,70 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
+            WhileLoopExample();
+
             Console.ReadKey();
         }
+
+        #region switch/нововведение
+
+        static void ExecutePatternMatchingSwitch()
+        {
+            Console.WriteLine("1 [Integer (5)], 2[String \"Hi\"], 3 [Decimal (2.5)]");
+            Console.WriteLine("Choice enter:");
+            string userChoice = Console.ReadLine();
+            object choice = new object();
+
+            switch(userChoice)
+            {
+                //стандартный свитч
+
+                case "1":
+                    choice = 5;
+                    break;
+                case "2":
+                    choice = "Hi";
+                    break;
+                case "3":
+                    choice = 2.5;
+                    break;
+            }
+
+            switch(choice)
+            {
+                //типа крутой свитч
+                case int i:
+                    Console.WriteLine($"You choice int = {i}");
+                    break;
+                case string s:
+                    Console.WriteLine($"You choice string = {s}");
+                    break;
+                case decimal d:
+                    Console.WriteLine($"You choice decimal = {d}");
+                    break;
+            }
+
+            // так же можно добавить when к условию что даст возможность ввести доп условие
+            // пример: case int l when i == 1: (создание переменной и ее проверка в данном случае)
+        }
+
+
+        #endregion
+
+        #region while
+
+        static void WhileLoopExample()
+        {
+            string yes = Console.ReadLine();
+
+            while (yes != "yes")
+            {
+                Console.WriteLine("уебак");
+                yes = Console.ReadLine();
+            }
+        }
+
+        #endregion
 
         #region var
 
