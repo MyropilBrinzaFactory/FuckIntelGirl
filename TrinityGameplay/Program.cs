@@ -9,8 +9,6 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
-            DeclarelmplicitVars();
-
             Console.ReadKey();
         }
 
