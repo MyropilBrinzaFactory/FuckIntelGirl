@@ -10,8 +10,97 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
+            JaggedMultidimensionalArray();
             Console.ReadKey();
         }
+
+        #region array
+
+        static void CreateArrays()
+        {
+            int[] arr1 = new int[3]; // 0 - 2
+
+            string[] arr2 = new string[2]; // 0 - 99
+
+            // присоваение значения элементу массива
+
+            arr1[0] = 3;
+            arr1[1] = 2;
+            arr1[2] = 5;
+
+            arr2[0] = "bleach";
+            arr2[1] = "pedik";
+
+            // вывод массивов
+
+            foreach(int i in arr1)
+                Console.WriteLine(i);
+
+            foreach(string s in arr2)
+                Console.WriteLine(s);
+        }
+
+        static void ArrayOfObjects()
+        {
+            object[] myObj = new object[4];
+            myObj[0] = 10;
+            myObj[1] = true;
+            myObj[2] = "fasdf";
+            myObj[3] = new DateTime(1993, 10, 2);
+
+            foreach(object ib in myObj)
+                Console.WriteLine(ib);
+        }
+
+        static void RectMultidimensionalArray()
+        {
+            // прямоугольный многомерный массив
+            int[,] myMatrix;
+            myMatrix = new int[3, 4];
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    myMatrix[i, j] = i * j;
+                }
+            }
+
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Console.Write(myMatrix[i, j] + "\t");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        static void JaggedMultidimensionalArray()
+        {
+            // зубчатый многомерный массив (те массив массивов)
+            // здесь мы имеем массив из 5 разных массивов
+            int[][] myJagArray = new int[5][];
+            // создать зуб массив
+            for (int i = 0; i < myJagArray.Length; i++)
+            {
+                myJagArray[i] = new int[i + 7];
+            }
+
+            // вывести все строки
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < myJagArray[i].Length; j++) // здесь [i] в качестве каждого массива
+                {
+                    Console.Write(myJagArray[i][j] + " ");
+                }
+                Console.WriteLine();
+            }
+            Console.WriteLine();
+        }
+
+        #endregion
 
         #region switch/нововведение
 
@@ -370,6 +459,14 @@ namespace TrinityGameplay
         #endregion
 
         #region CODEWARS
+
+        static void CamelCase()
+        {
+            string str = "casdJes";
+
+            var result = string.Concat(str.Select(c => char.IsUpper(c) ? " " + c.ToString() : c.ToString())).TrimStart();
+            Console.WriteLine(result);
+        }
 
         static void DeleteDigits()
         {
