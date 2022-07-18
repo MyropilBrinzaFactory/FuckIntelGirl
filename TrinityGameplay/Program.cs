@@ -10,7 +10,7 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
-            JaggedMultidimensionalArray();
+            SystemArrayFunctionality();
             Console.ReadKey();
         }
 
@@ -98,6 +98,62 @@ namespace TrinityGameplay
                 Console.WriteLine();
             }
             Console.WriteLine();
+        }
+
+        static void PrintArray(int[] myInts)
+        {
+            for (int i = 0; i < myInts.Length; i++)
+            {
+                Console.WriteLine($"Item{myInts[i]}");
+            }
+        }
+
+        static string[] GetStringArray()
+        {
+            string[] theStrings = { "Hello", "from", "GetStringArray" };
+            return theStrings;
+        }
+
+        // вызов двух методов выше
+
+        static void PassAndReceiveArrays()
+        {
+            // передать массив в качестве параметра.
+            int[] ages = { 20, 23, 11, 5 };
+            PrintArray(ages);
+
+            // получить массив как возвращемое значение.
+            string[] strs = GetStringArray();
+            foreach(string s in strs)
+            {
+                Console.WriteLine(s);
+            }
+        }
+
+        static void SystemArrayFunctionality()
+        {
+            string[] gothicBands = { "Tones on Tail", "Bauhaus", "Sisters of Mercy" };
+
+            // вывести мена в порядке их объявления
+            for(int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.WriteLine(gothicBands[i] + ", ");
+            }
+            Console.WriteLine("\n");
+            // перевернуть массив
+            Array.Reverse(gothicBands);
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.WriteLine(gothicBands[i] + ", ");
+            }
+
+            // удалить все элементы кроме третьего
+
+            Array.Clear(gothicBands, 1, 2);
+            for (int i = 0; i < gothicBands.Length; i++)
+            {
+                Console.WriteLine(gothicBands[i] + ", ");
+            }
         }
 
         #endregion
