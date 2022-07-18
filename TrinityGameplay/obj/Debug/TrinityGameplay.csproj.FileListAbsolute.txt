@@ -12,3 +12,10 @@ C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\obj\Debug\TrinityGa
 C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.exe.config
 C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.exe
 C:\Users\User\Source\Repos\intelGirlTutorial\TrinityGameplay\bin\Debug\TrinityGameplay.pdb
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\bin\Debug\TrinityGameplay.exe.config
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\bin\Debug\TrinityGameplay.exe
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\bin\Debug\TrinityGameplay.pdb
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\obj\Debug\TrinityGameplay.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\obj\Debug\TrinityGameplay.exe
+C:\Users\User\source\repos\FuckIntelGirl\TrinityGameplay\obj\Debug\TrinityGameplay.pdb

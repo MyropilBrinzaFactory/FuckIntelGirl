@@ -10,8 +10,17 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
-            SystemArrayFunctionality();
-            Console.ReadKey();
+            string oleg = "Oleg";
+            string result = null;
+            int n = 5;
+            for (int i = 0; i < n; i++)
+            {
+                result += oleg;
+            }
+
+            Console.WriteLine(result);
+            Console.ReadLine();
+            
         }
 
         #region array
