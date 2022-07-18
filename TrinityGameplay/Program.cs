@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Windows.Forms;
+using System.Linq;
 using System.Numerics;
 
 namespace TrinityGameplay
@@ -9,8 +10,6 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
-            WhileLoopExample();
-
             Console.ReadKey();
         }
 
@@ -366,6 +365,27 @@ namespace TrinityGameplay
             MessageBox.Show($"Name user: {Environment.UserName}");
             MessageBox.Show($"Machine name: {Environment.MachineName}");
             MessageBox.Show($"Woring set: {Environment.WorkingSet}");
+        }
+
+        #endregion
+
+        #region CODEWARS
+
+        static void DeleteDigits()
+        {
+            string s = "проа105егь1а5вло2ажд5мшк5щщ5 джыоа5ывдж8алкж8";
+            string newString = s.Replace("0", "")
+                                .Replace("1", "")
+                                .Replace("2", "")
+                                .Replace("3", "")
+                                .Replace("4", "")
+                                .Replace("5", "")
+                                .Replace("6", "")
+                                .Replace("7", "")
+                                .Replace("8", "")
+                                .Replace("9", "");
+
+            Console.WriteLine(newString);
         }
 
         #endregion
