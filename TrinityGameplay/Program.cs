@@ -3,6 +3,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Linq;
 using System.Numerics;
+using System.Threading.Tasks;
+using System.Threading;
 
 namespace TrinityGameplay
 {
@@ -10,18 +12,23 @@ namespace TrinityGameplay
     {
         static void Main(string[] args)
         {
-            string oleg = "Oleg";
-            string result = null;
-            int n = 5;
-            for (int i = 0; i < n; i++)
-            {
-                result += oleg;
-            }
-
-            Console.WriteLine(result);
-            Console.ReadLine();
             
         }
+
+        #region async await
+
+        void RunSpace()
+        {
+        }
+
+        async Task PrintAsync()
+        {
+            Console.WriteLine("Начало метода PrintAsync"); // выполняется синхронно
+            await Task.Run(() => RunSpace());                // выполняется асинхронно
+            Console.WriteLine("Конец метода PrintAsync");
+        }
+
+        #endregion
 
         #region array
 
